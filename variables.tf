@@ -5,7 +5,7 @@ variable "domain_name" {
 
 variable "subdomain" {
   type    = string
-  default = "numbersappecs-argo"
+  default = "argo"
 }
 # variable subdomain {
 #   description = "Subdomain per environment"
@@ -18,6 +18,6 @@ variable "subdomain" {
 # }
 
 variable "lb_dns_name" {
-   description = "Aplication load balancer dns name"
-   default = "k8s-mlflow-mymlflow-3ce8e5287e-1639301570.us-east-1.elb.amazonaws.com"
+  description = "Aplication load balancer dns name"
+  default     = null
 }
